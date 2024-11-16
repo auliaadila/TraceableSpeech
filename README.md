@@ -3,6 +3,7 @@ PyTorch Implementation of [TraceableSpeech: Towards Proactively Traceable Text-t
 
 Now we update the part of speech watermarking.
 
+<!--
 ## Quick Started
 ### Dependencies
 ```
@@ -47,6 +48,7 @@ If you find this code useful in your research, please consider citing:
       url={https://arxiv.org/abs/2406.04840}, 
 }
 ```
+-->
 
 
 
