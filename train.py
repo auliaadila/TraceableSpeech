@@ -348,8 +348,8 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--input_mels_dir', default=None)
-    parser.add_argument('--input_training_file', default='/data1/zhoujunzuo/Task/December/Audio_watermark/train.txt') 
-    parser.add_argument('--input_validation_file', default='/data1/zhoujunzuo/Task/December/Audio_watermark/vaildation.txt')
+    parser.add_argument('--input_training_file', default='/data1/Audio_watermark/train.txt') 
+    parser.add_argument('--input_validation_file', default='/data1/Audio_watermark/vaildation.txt')
     parser.add_argument('--checkpoint_path', default='./save_model')
     parser.add_argument('--config', default='./config.json')
     parser.add_argument('--training_epochs', default=2000, type=int)
