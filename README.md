@@ -1,11 +1,9 @@
 # TraceableSpeech
-PyTorch Implementation of [TraceableSpeech: Towards Proactively Traceable Text-to-Speech with Watermarking](https://arxiv.org/abs/2406.04840)
+PyTorch Implementation of  [TraceableSpeech: Towards Proactively Traceable Text-to-Speech with Watermarking](https://arxiv.org/abs/2406.04840)
 
-Now we update the part of speech watermarking.
+Now we open the part of speech watermarking.
 
 This is the watermark training pipeline. 
-
-We will complete the whole detail soon.
 
 ## Quick Started
 ### Dependencies
