@@ -7,7 +7,6 @@ This is the watermark training pipeline.
 
 We will complete the whole detail soon.
 
-<!--
 ## Quick Started
 ### Dependencies
 ```
@@ -52,7 +51,7 @@ If you find this code useful in your research, please consider citing:
       url={https://arxiv.org/abs/2406.04840}, 
 }
 ```
--->
+
 
 
 
