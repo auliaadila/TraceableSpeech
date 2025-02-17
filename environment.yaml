@@ -140,7 +140,6 @@ dependencies:
       - urllib3
       - validators==0.22.0
       - visdom==0.2.4
-      - visqol
       - watchdog==3.0.0
       - wavmark==0.0.3
       - webrtcvad==2.0.10
