@@ -54,6 +54,11 @@ def save_checkpoint(filepath, obj, num_ckpt_keep=5):
     torch.save(obj, filepath)
     print("Complete.")
 
+def save_best_checkpoint(filepath, obj):
+    print("Saving checkpoint to {}".format(filepath))
+    torch.save(obj, filepath)
+    print("Complete.")
+
 
 def scan_checkpoint(cp_dir, prefix):
     pattern = os.path.join(cp_dir, prefix + '????????')

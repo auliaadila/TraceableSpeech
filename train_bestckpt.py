@@ -21,9 +21,9 @@ from watermark import Random_watermark, Watermark_Encoder, Watermark_Decoder, si
 from models import Generator, MultiPeriodDiscriminator, MultiScaleDiscriminator, feature_loss, generator_loss,\
     discriminator_loss, Encoder, Quantizer
 try:
-    from utils import plot_spectrogram, scan_checkpoint, load_checkpoint, save_checkpoint
+    from utils import plot_spectrogram, scan_checkpoint, load_checkpoint, save_best_checkpoint
 except:
-    from .utils import plot_spectrogram, scan_checkpoint, load_checkpoint, save_checkpoint
+    from .utils import plot_spectrogram, scan_checkpoint, load_checkpoint, save_best_checkpoint
 
 torch.backends.cudnn.benchmark = True
 torch.backends.cudnn.benchmark = True
@@ -336,7 +336,7 @@ def train(rank, a, h):
                             # Save best "g"
                             checkpoint_path = "{}/g_s-{:08d}_e-{:03d}".format(a.checkpoint_path,
                                                            steps, epoch)
-                            save_checkpoint(checkpoint_path,
+                            save_best_checkpoint(checkpoint_path,
                                             {'generator': (generator.module if h.num_gpus > 1 else generator).state_dict(),
                                             'encoder': (encoder.module if h.num_gpus > 1 else encoder).state_dict(),
                                             'quantizer_Audio': (quantizer_Audio.module if h.num_gpus > 1 else quantizer_Audio).state_dict(),
@@ -346,7 +346,7 @@ def train(rank, a, h):
                             # Save best "do"
                             checkpoint_path = "{}/do_s-{:08d}_e-{:03d}".format(a.checkpoint_path,
                                                            steps, epoch)
-                            save_checkpoint(checkpoint_path,
+                            save_best_checkpoint(checkpoint_path,
                                             {'mpd': (mpd.module if h.num_gpus > 1
                                                                 else mpd).state_dict(),
                                             'msd': (msd.module if h.num_gpus > 1
