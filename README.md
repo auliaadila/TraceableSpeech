@@ -33,6 +33,10 @@ python train.py
 python inference.py
 ```
 
+### Tips
+If training directly with simulated attack patterns is not effective, I suggest training the weights first without simulated attacks, and then subsequently adding a simulated attack module for fine-tuning, which can help improve your training.
+
+
 ### Acknowledgements
 This implementation uses parts of the code from the following Github repos: [AcademiCodec](https://github.com/yangdongchao/AcademiCodec)
 
